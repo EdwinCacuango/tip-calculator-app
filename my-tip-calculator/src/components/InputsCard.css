@@ -1,0 +1,46 @@
+.inputs-card {
+  width: 23.625rem;
+  height: 26.125rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem auto 1rem;
+}
+.btn-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 7.3125rem);
+  gap: 0.875rem;
+  padding: 0;
+}
+.percentage-btn {
+  width: 100%;
+  font-size: 1.1875rem;
+  font-weight: 500;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 0;
+}
+.percentage-btn:hover{
+background-color: hsl(172, 67%, 45%);
+cursor: pointer;
+}
+
+input {
+  height: 2.875rem;
+  width: 100%;
+  border-radius: 5px;
+  margin-top:0.75rem;
+  background-color: hsl(189, 41%, 97%);
+  -moz-appearance:textfield;
+  border: none;
+}
+
+input::-webkit-inner-spin-button,
+input:-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

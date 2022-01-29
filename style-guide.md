@@ -11,14 +11,14 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Strong cyan: hsl(172, 67%, 45%)
+- Strong cyan: hsl(172, 67%, 45%) //fonts
 
 ### Neutral
 
-- Very dark cyan: hsl(183, 100%, 15%)
+- Very dark cyan: hsl(183, 100%, 15%) Bg rigth card
 - Dark grayish cyan: hsl(186, 14%, 43%)
 - Dark grayish cyan: hsl(184, 14%, 56%)
-- Light grayish cyan: hsl(185, 41%, 84%)
+- Light grayish cyan: hsl(185, 41%, 84%) //Bg main
 - Light grayish cyan: hsl(189, 41%, 97%)
 - White: hsl(0, 0%, 100%)
 
