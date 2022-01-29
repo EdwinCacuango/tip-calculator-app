@@ -6,7 +6,7 @@ function InputCards(props) {
     <div className="inputs-card">
       <div>
         <p>Bill</p>
-        <input type="number" />
+        <input type="number" id="bill"/>
       </div>
       <div>
         <ul className="btn-list">
@@ -32,7 +32,7 @@ function InputCards(props) {
       </div>
       <div>
         <p>Number of people</p>
-        <input type="number" />
+        <input type="number" id="number-people"/>
       </div>
     </div>
   );

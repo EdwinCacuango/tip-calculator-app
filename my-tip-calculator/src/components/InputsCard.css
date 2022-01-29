@@ -37,10 +37,25 @@ input {
   background-color: hsl(189, 41%, 97%);
   -moz-appearance:textfield;
   border: none;
+  text-align: right;
+  font-size: 1rem;
 }
 
 input::-webkit-inner-spin-button,
 input:-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+#bill{
+  background-image: url("./images/icon-dollar.svg");
+}
+#number-people{
+  background-image: url("./images/icon-person.svg");
+}
+#bill,
+#number-people{
+  background-repeat: no-repeat;
+  background-position:1rem ;
+  padding: 1rem;
 }
