@@ -1,11 +1,12 @@
 import "./App.css";
 import ResultsCard from "./components/ResultsCard";
 import InputCards from "./components/InputsCard";
+import MainLogo from "./components/MainLogo";
 
 function App() {
   return (
     <div className="App">
-      <h1>Spli<span>tter</span></h1>
+      <MainLogo />
       <div className="calculator">
         <InputCards></InputCards>
         <ResultsCard></ResultsCard>
