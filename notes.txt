@@ -1,0 +1,5 @@
+Icono dentro del input
+https://desarrolloweb.com/faq/html-con-javascript
+
+Eliminar botones del input form
+https://es.stackoverflow.com/questions/20484/c%C3%B3mo-eliminar-los-botones-de-un-input-number/20486
