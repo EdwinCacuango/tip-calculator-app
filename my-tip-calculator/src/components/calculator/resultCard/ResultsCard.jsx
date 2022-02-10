@@ -1,5 +1,5 @@
 import "./ResultsCard.css";
-function ResultsCard() {
+function ResultsCard(props) {
   return (
     <div className="Results-card">
       <div className="results-container">
@@ -9,7 +9,7 @@ function ResultsCard() {
         </div>
         <div className="result">
           <p>Total <span className="each-person">/person</span></p>
-          <p className="result-value">$36,75</p>
+          <p className="result-value">{props.eachPerson}</p>
         </div>
       </div>
       <button className="reset-btn">Reset</button>
