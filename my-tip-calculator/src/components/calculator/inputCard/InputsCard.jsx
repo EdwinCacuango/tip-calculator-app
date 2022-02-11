@@ -21,6 +21,9 @@ function InputCards(props) {
 
   //Number person handler
   const personHandler=(e)=>{
+    if (e.target.value==1){
+      return
+    }
     setUserInput({
       ...userInput,
       enteredNumberPeople:parseInt(e.target.value)
