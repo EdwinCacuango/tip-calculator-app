@@ -22,6 +22,13 @@ const Calculator = () => {
     setPercentage(+numberButton);
   };
 
+
+  const resetBtn=()=>{
+    setBill(0)
+    setNumberPerson(1)
+    setPercentage(0)
+  }
+
   return (
     <div className="calculator">
       <InputCards
@@ -33,6 +40,7 @@ const Calculator = () => {
         userBill={bill}
         totalPercentage={percentage}
         numberPersons={numberPerson}
+        reset={resetBtn}
       ></ResultsCard>
     </div>
   );

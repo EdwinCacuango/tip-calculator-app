@@ -31,7 +31,7 @@ function ResultsCard(props) {
           <p className="result-value">$ {eachPBill}</p>
         </div>
       </div>
-      <button className="reset-btn">Reset</button>
+      <button className="reset-btn" onClick={props.reset}>Reset</button>
     </div>
   );
 }
