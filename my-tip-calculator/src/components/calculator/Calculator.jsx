@@ -8,27 +8,26 @@ const Calculator = () => {
   const [numberPerson, setNumberPerson] = useState(1);
 
   const addedBill = (addedInfo) => {
-    setBill(addedInfo);
+    setBill(+addedInfo);
   };
 
   const addedPersons = (addedNumberPersons) => {
-    setNumberPerson(addedNumberPersons);
+    setNumberPerson(+addedNumberPersons);
   };
 
   //Data from buttons percentage
-  const [percentage, setPercentage]=useState(0)
+  const [percentage, setPercentage] = useState(0);
 
-  const addedPercentage=(numberButton)=>{
-    setPercentage(numberButton)
-  }
+  const addedPercentage = (numberButton) => {
+    setPercentage(+numberButton);
+  };
 
   // //mainDivisions
   // const [personTip, setPersonTip]=useState(0)
 
-
   // console.log(personTip)
   // const tipDivision=()=>{
-  //   const tipGlobal=bill*percentage 
+  //   const tipGlobal=bill*percentage
   //   console.log("TipGlobal"+tipGlobal)
   // }
 
@@ -41,7 +40,11 @@ const Calculator = () => {
         saveNumberPerson={addedPersons}
         savePercentage={addedPercentage}
       ></InputCards>
-      <ResultsCard ></ResultsCard>
+      <ResultsCard
+        userBill={bill}
+        totalPercentage={percentage}
+        numberPersons={numberPerson}
+      ></ResultsCard>
     </div>
   );
 };
