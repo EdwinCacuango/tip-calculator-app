@@ -1,22 +1,11 @@
-import { useState } from "react";
 import ButtonsList from "./ButtonsList";
 import "./InputsCard.css";
 
 function InputCards(props) {
-  //Global data
-  const [userInput, setUserInput]=useState({
-    enteredBill:"0",
-    enteredNumberPeople:1
-  })
-
   //Bill handler
   const billHandler=(e)=>{
-    setUserInput({
-      ...userInput,
-      enteredBill:parseInt(e.target.value)
-    })
-
-    props.onSaveData(userInput)
+    props.saveBillInfo(e.target.value)
+    
   }
 
   //Number person handler
@@ -24,12 +13,7 @@ function InputCards(props) {
     if (e.target.value==1){
       return
     }
-    setUserInput({
-      ...userInput,
-      enteredNumberPeople:parseInt(e.target.value)
-    })
-
-    props.onSaveData(userInput)
+    props.saveNumberPerson(e.target.value)
   }
   return (
     <div className="inputs-card">
@@ -43,7 +27,7 @@ function InputCards(props) {
           onChange={billHandler}
         />
       </div>
-      <ButtonsList></ButtonsList>
+      <ButtonsList savePercentage={props.savePercentage}></ButtonsList>
       <div>
         <p>Number of people</p>
         <input type="number" id="number-people" onChange={personHandler}/>

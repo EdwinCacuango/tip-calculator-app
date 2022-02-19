@@ -3,25 +3,45 @@ import InputCards from "./inputCard/InputsCard";
 import ResultsCard from "./resultCard/ResultsCard";
 
 const Calculator = () => {
-  // const [generalData, setGeneralData]=useState({
-  //   tipPerson:0,
-  //   billPerson:0    
-  // })
+  //Data from input forms
+  const [bill, setBill] = useState(0);
+  const [numberPerson, setNumberPerson] = useState(1);
 
-  const [billPerson, setBillPerson]=useState(0)
-  const principalDivision = (object) => {
-    console.log(object.enteredNumberPeople)
-    const billPerPerson = object.enteredBill / object.enteredNumberPeople;
-    
-    setBillPerson(billPerPerson)
-    
+  const addedBill = (addedInfo) => {
+    setBill(addedInfo);
   };
 
-  
+  const addedPersons = (addedNumberPersons) => {
+    setNumberPerson(addedNumberPersons);
+  };
+
+  //Data from buttons percentage
+  const [percentage, setPercentage]=useState(0)
+
+  const addedPercentage=(numberButton)=>{
+    setPercentage(numberButton)
+  }
+
+  // //mainDivisions
+  // const [personTip, setPersonTip]=useState(0)
+
+
+  // console.log(personTip)
+  // const tipDivision=()=>{
+  //   const tipGlobal=bill*percentage 
+  //   console.log("TipGlobal"+tipGlobal)
+  // }
+
+  // setPersonTip(tipDivision)
+
   return (
     <div className="calculator">
-      <InputCards onSaveData={principalDivision}></InputCards>
-      <ResultsCard eachPerson={billPerson}></ResultsCard>
+      <InputCards
+        saveBillInfo={addedBill}
+        saveNumberPerson={addedPersons}
+        savePercentage={addedPercentage}
+      ></InputCards>
+      <ResultsCard ></ResultsCard>
     </div>
   );
 };
