@@ -22,17 +22,6 @@ const Calculator = () => {
     setPercentage(+numberButton);
   };
 
-  // //mainDivisions
-  // const [personTip, setPersonTip]=useState(0)
-
-  // console.log(personTip)
-  // const tipDivision=()=>{
-  //   const tipGlobal=bill*percentage
-  //   console.log("TipGlobal"+tipGlobal)
-  // }
-
-  // setPersonTip(tipDivision)
-
   return (
     <div className="calculator">
       <InputCards
