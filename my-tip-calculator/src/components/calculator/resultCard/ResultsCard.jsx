@@ -1,6 +1,7 @@
 
 import "./ResultsCard.css";
 function ResultsCard(props) {
+  //Use and store data from input card
   let userData={
     prevBill:props.userBill,
     percentage: props.totalPercentage,

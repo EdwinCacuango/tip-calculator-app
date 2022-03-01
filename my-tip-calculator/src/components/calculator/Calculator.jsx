@@ -29,12 +29,15 @@ const Calculator = () => {
     setPercentage(0)
   }
 
+
   return (
     <div className="calculator">
       <InputCards
         saveBillInfo={addedBill}
         saveNumberPerson={addedPersons}
         savePercentage={addedPercentage}
+        peopleValue={numberPerson}
+        billValue={bill}
       ></InputCards>
       <ResultsCard
         userBill={bill}
