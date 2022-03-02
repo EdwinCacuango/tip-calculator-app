@@ -15,7 +15,7 @@ input {
   background-color: hsl(189, 41%, 97%);
   border: none;
   text-align: right;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 input[type=number]::-webkit-inner-spin-button, 

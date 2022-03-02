@@ -9,30 +9,28 @@ function InputCards(props) {
 
   //Number person handler
   const personHandler = (e) => {
-    if (e.target.value == 1) {
-      return;
-    }
-    props.saveNumberPerson(e.target.value);
+   props.saveNumberPerson(e.target.value);
   };
+
   return (
     <div className="inputs-card">
       <div>
         <p>Bill</p>
         <input
-          type="number"
+          type="text"
           id="bill"
-          min="1"
-          max="10000"
+          maxLength="10"
           value={props.billValue}
           onChange={billHandler}
         />
       </div>
-      <ButtonsList savePercentage={props.savePercentage}></ButtonsList>
+      <ButtonsList savePercentage={props.savePercentage} ></ButtonsList>
       <div>
         <p>Number of people</p>
         <input
-          type="number"
+          type="text"
           id="number-people"
+          maxLength="6"
           value={props.peopleValue}
           onChange={personHandler}
         />

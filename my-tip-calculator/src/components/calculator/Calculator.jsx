@@ -22,13 +22,12 @@ const Calculator = () => {
     setPercentage(+numberButton);
   };
 
-
+  //Reset states in all the components
   const resetBtn=()=>{
     setBill(0)
     setNumberPerson(1)
     setPercentage(0)
   }
-
 
   return (
     <div className="calculator">
