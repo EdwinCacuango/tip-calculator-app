@@ -5,8 +5,16 @@
   gap: 0.875rem;
   padding: 0;
 }
+
+@media (max-width:48rem) {
+  .btn-list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
 .percentage-btn {
   width: 100%;
+  font-family: 'Space Mono', monospace;
   font-size: 1.1875rem;
   font-weight: 500;
   background-color: hsl(183, 100%, 15%);

@@ -39,3 +39,9 @@ input[type=number] { -moz-appearance:textfield; }
   background-position:1rem ;
   padding: 1rem;
 }
+
+@media (max-width:45rem) {
+  .inputs-card{
+    max-width: 19.375rem;
+  }
+}

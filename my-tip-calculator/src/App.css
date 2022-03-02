@@ -34,6 +34,13 @@ p{
   margin-bottom: 1.34rem;
 }
 
+@media (max-width:45rem) {
+  .calculator{
+    flex-direction: column;
+    max-width: 23.4375rem;
+  }
+}
+
 h1{
   text-transform: uppercase;
   letter-spacing: 1rem;
