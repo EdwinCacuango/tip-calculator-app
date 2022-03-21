@@ -15,7 +15,7 @@ function InputCards(props) {
   return (
     <div className="inputs-card">
       <div>
-        <p>Bill</p>
+        <label for="bill">Bill</label> 
         <input
           type="text"
           id="bill"
@@ -26,7 +26,7 @@ function InputCards(props) {
       </div>
       <ButtonsList savePercentage={props.savePercentage} ></ButtonsList>
       <div>
-        <p>Number of people</p>
+        <label for="number-people">Number of people</label>
         <input
           type="text"
           id="number-people"
