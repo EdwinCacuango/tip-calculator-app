@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/tip-calculator-using-react-0DJymiOlq)
-- Live Site URL: [Add live site URL here](https://reverent-saha-d7fba4.netlify.app/)
+- Solution URL: [Frontend Mentor site](https://www.frontendmentor.io/solutions/tip-calculator-using-react-0DJymiOlq)
+- Live Site URL: [Click here!](https://reverent-saha-d7fba4.netlify.app/)
 
 ## My process
 
