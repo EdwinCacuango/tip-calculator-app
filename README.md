@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/Screenshot Tip calculator app.png)
+![](./design/Screenshot Tip calculator app.jpg)
 
 ### Links
 
